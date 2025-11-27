@@ -75,7 +75,7 @@ Each `PhysDevice` instance will retrieve all the properties and features we need
 - That the device supports the graphics queue family. This is done by calling the `hasGraphicsQueueFamily` method.
 - That the device is capable of presenting images to a screen. This is done by calling the `hasKHRSwapChainExtension` method.
 
-You may be surprised that this is not part of the core API, but think that you may have GPUs that may be used just for computing or that are not even attached to any display (they may do off-screen rendering). So being this capability optional, we need to be sure that the selected device supports it. We will show later on the implementation of those two methods.
+You may be surprised that this is not part of the core API, but think that you may have GPUs that may be used just for computing or that are not even attached to any display (they may do off-screen rendering). So because this capability is optional, we need to be sure that the selected device supports it. We will show later on the implementation of those two methods.
 
 If the device fulfills both conditions, we then check if its name matches the preferred device name (if this has been specified). If so, we already have our candidate and there's no need to continue so we break the loop. If not, we just add that device to the list of potential candidates and continue with the loop. We tend to select discrete GPU devices. that is, non integrated GPUs, so we add them on top of the list to have most priority.
 
