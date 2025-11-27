@@ -243,7 +243,7 @@ public class PhysDevice {
 ```
 
 Now we can check the implementation of the method that checks if the device supports the required extensions. At this stage we will just check if it supports the KHR Swapchain extension. That is, the method that checks if this device is capable of rendering images to the screen.
-In future chapters we may need to include additional ones, therefore we will store required extension names in a `Set` and in the `supportsExtensions`, we weill just
+In future chapters we may need to include additional ones, therefore we will store required extension names in a `Set` and in the `supportsExtensions`, we will just
 iterate over `vkDeviceExtensions` checking that all of them are included:
 
 ```java
