@@ -512,7 +512,7 @@ public class Instance {
 }
 ```
 
-Most of the Vulkan functions return an `int` value that is used to check if the call as succeeded or not.
+Most of the Vulkan functions return an `int` value that is used to check if the call has succeeded or not.
 To check this, a utility method has been defined in the `VulkanUtils` class that throws a `RuntimeException` if the call does not return `VK_SUCCESS`.
 It also maps some error codes to string which help identifying the cause.
 
