@@ -125,7 +125,7 @@ The following list collects the ones that I've found more useful, and that I've 
 > [!NOTE]  
 > If you have troubles with LWJGL in your machine you can try the following JVM arguments: `-Dorg.lwjgl.util.Debug=true` to enable LWJGL debug mode,
 > `-Dorg.lwjgl.util.DebugAllocator=true` to debug `MemoryUtil` memory allocation and `-Dorg.lwjgl.util.DebugStack=true` to debug `MemoryStack` related operations
-> (push and pop) thattmay cause issues.
+> (push and pop) that may cause issues.
 > Remember that these are JVM arguments, not program arguments. If you set them in a IDE you may need to set this in the correct place.  
 
 [Next chapter](../chapter-01/chapter-01.md)
